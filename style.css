@@ -1,0 +1,32 @@
+   /* แบบ tag */
+        body {
+            background-color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+        }
+        /* แบบ tag */
+        .botomUP {
+            background: linear-gradient(to right, rgb(255, 145, 145),rgb(62, 226, 255));
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+        }
+        .botomUP:hover {
+            background: linear-gradient(to right,rgb(140, 154, 242),rgb(245, 245, 245) );
+        }
+        /* แบบ id */
+        #topDown {
+            background: linear-gradient(to right,rgb(138, 151, 145),rgb(244, 74, 105) );
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+        }
+        #topDown:hover {
+            background: linear-gradient(to right,rgb(25, 20, 22),rgb(97, 223, 131) );
+        }
