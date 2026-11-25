@@ -1,72 +1,231 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เว็บไซต์คนสวย</title>
+
+    <title>Beam | My Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    
-   <!-- Latest compiled and minified CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-   <!-- Latest compiled JavaScript -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-info">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Beam</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">about</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">contact</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">ค้นหา</button>
-      </form>
-    </div>
-  </div>
-</nav>       
-    <div class="container-fluid">
-        <img src="image/Beam.png" width="100%">
-    </div>
 
-    <br>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="image1/รูป1.png" width="100%" class="rounded" >
-            </div>
-            <div class="col-sm-6">
-                <h1>สวัสดีชาวโลก ยินดีที่ได้รู้จัก</h1>
-                <p>
-                    สวัสดีค่ะ ฉันชื่อ นางสาวศิลาสิณี พันแทน (Beam Silasinee Phanthaen)
+        <a class="navbar-brand" href="#home">
+            Beam<span>.</span>
+        </a>
 
-ปัจจุบันกำลังศึกษาอยู่ที่มหาวิทยาลัยกาฬสินธุ์ คณะบริหารศาสตร์ สาขาวิชาคอมพิวเตอร์ธุรกิจ
+        <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-ฉันมีความสนใจด้านเทคโนโลยีดิจิทัล คอมพิวเตอร์ และการนำเทคโนโลยีมาประยุกต์ใช้กับการดำเนินธุรกิจ ชื่นชอบการเรียนรู้สิ่งใหม่ ๆ การสร้างสรรค์ผลงาน และการพัฒนาทักษะของตนเองอยู่เสมอ
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
 
-ฉันเชื่อว่าความรู้และประสบการณ์เป็นสิ่งสำคัญในการเติบโต จึงพร้อมเปิดรับโอกาสใหม่ ๆ กล้าคิด กล้าลงมือทำ และเรียนรู้จากทุกความท้าทาย เพื่อก้าวไปสู่เป้าหมายที่ตั้งใจไว้
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
 
-"ทุกความสำเร็จเริ่มต้นจากการเรียนรู้ และทุกความฝันเป็นจริงได้ด้วยการลงมือทำ"
-                </p>
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Interest</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <a href="#contact" class="nav-button">Let's Talk ♡</a>
         </div>
     </div>
-    <div class="container-fluid">
-        <footer class="py-3 my-4 border-top text-center text-body-secondary bg-primary">
-            <p class="text-white">&copy; 2026 Silasinee, All rights reserved</p>
-        </footer>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6 hero-text">
+                <span class="hello">WELCOME TO MY WEBSITE ♡</span>
+
+                <h1>
+                    Hello, I'm <br>
+                    <span>Beam Silasinee</span>
+                </h1>
+
+                <h5>Business Computer Student</h5>
+
+                <p>
+                    ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของฉัน
+                    พื้นที่สำหรับแนะนำตัว แบ่งปันความสนใจ
+                    และรวบรวมผลงานที่เกิดจากการเรียนรู้
+                    และความตั้งใจของฉัน
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn-pink">About Me ♡</a>
+                    <a href="#contact" class="btn-outline">Contact</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 hero-image">
+                <div class="image-frame">
+                    <img src="image/Beam.png" alt="Beam Silasinee">
+                </div>
+                <div class="floating-text">Nice to meet you! ♡</div>
+            </div>
+
+        </div>
     </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about section-padding">
+    <div class="container">
+
+        <div class="section-title">
+            <span>GET TO KNOW ME</span>
+            <h2>About Me <span>♡</span></h2>
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-5 mb-4">
+                <img src="image1/รูป1.png"
+                     class="about-image"
+                     alt="My Profile">
+            </div>
+
+            <div class="col-lg-7">
+                <div class="about-card">
+
+                    <h3>สวัสดีค่ะ ยินดีที่ได้รู้จัก</h3>
+
+                    <p>
+                        ฉันชื่อ <strong>นางสาวศิลาสิณี พันแทน</strong>
+                        (Beam Silasinee Phanthaen)
+                    </p>
+
+                    <p>
+                        ปัจจุบันกำลังศึกษาอยู่ที่
+                        มหาวิทยาลัยกาฬสินธุ์
+                        คณะบริหารศาสตร์
+                        สาขาวิชาคอมพิวเตอร์ธุรกิจ
+                    </p>
+
+                    <p>
+                        ฉันมีความสนใจด้านเทคโนโลยีดิจิทัล
+                        คอมพิวเตอร์ และการนำเทคโนโลยี
+                        มาประยุกต์ใช้กับการดำเนินธุรกิจ
+                        ชื่นชอบการเรียนรู้สิ่งใหม่ ๆ
+                        การสร้างสรรค์ผลงาน
+                        และการพัฒนาทักษะของตนเองอยู่เสมอ
+                    </p>
+
+                    <p>
+                        ฉันเชื่อว่าความรู้และประสบการณ์
+                        เป็นสิ่งสำคัญในการเติบโต
+                        พร้อมเปิดรับโอกาสใหม่ ๆ
+                        และเรียนรู้จากทุกความท้าทาย
+                    </p>
+
+                    <div class="quote">
+                        "ทุกความสำเร็จเริ่มต้นจากการเรียนรู้
+                        และทุกความฝันเป็นจริงได้ด้วยการลงมือทำ"
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Interest Section -->
+<section id="skills" class="interest section-padding">
+    <div class="container">
+
+        <div class="section-title">
+            <span>MY INTEREST</span>
+            <h2>Things I Love <span>♡</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="interest-card">
+                    <div class="interest-icon">💻</div>
+                    <h4>Technology</h4>
+                    <p>สนใจเทคโนโลยีดิจิทัลและนวัตกรรมใหม่ ๆ</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="interest-card">
+                    <div class="interest-icon">🌷</div>
+                    <h4>Creativity</h4>
+                    <p>ชอบออกแบบเว็บไซต์และสร้างสรรค์ผลงาน</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="interest-card">
+                    <div class="interest-icon">✨</div>
+                    <h4>Learning</h4>
+                    <p>รักการเรียนรู้และพัฒนาตนเองอยู่เสมอ</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section-padding">
+    <div class="container text-center">
+
+        <span>LET'S CONNECT</span>
+        <h2>Contact Me ♡</h2>
+
+        <p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์ของฉัน</p>
+
+        <div class="contact-links">
+            <a href="mailto:your-email@gmail.com">Email</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Beam Silasinee | Made with ♡</p>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -1,32 +1,332 @@
-   /* แบบ tag */
-        body {
-            background-color: aliceblue;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: auto;
-        }
-        /* แบบ tag */
-        .botomUP {
-            background: linear-gradient(to right, rgb(255, 145, 145),rgb(62, 226, 255));
-            color: white;
-            font-size: 20px;
-            padding: 10px;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-        }
-        .botomUP:hover {
-            background: linear-gradient(to right,rgb(140, 154, 242),rgb(245, 245, 245) );
-        }
-        /* แบบ id */
-        #topDown {
-            background: linear-gradient(to right,rgb(138, 151, 145),rgb(244, 74, 105) );
-            color: white;
-            font-size: 20px;
-            padding: 10px;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-        }
-        #topDown:hover {
-            background: linear-gradient(to right,rgb(25, 20, 22),rgb(97, 223, 131) );
-        }
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: #fffafd;
+    color: #555;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255,255,255,0.95);
+    padding: 15px 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.04);
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #555 !important;
+}
+
+.navbar-brand span {
+    color: #ed91b5;
+}
+
+.nav-link {
+    color: #666 !important;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #e98bb1 !important;
+}
+
+.nav-button {
+    background: #f4b4ce;
+    color: white;
+    padding: 9px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #e58caf;
+    color: white;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 70px;
+    background: linear-gradient(135deg, #fffafd, #f0f8ff);
+}
+
+.hello {
+    color: #e58caf;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 600;
+    color: #444;
+    margin: 20px 0;
+}
+
+.hero-text h1 span {
+    color: #e997b8;
+}
+
+.hero-text h5 {
+    color: #8daec8;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    line-height: 2;
+    color: #777;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn-pink,
+.btn-outline {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 27px;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn-pink {
+    background: #efa6c3;
+    color: white;
+}
+
+.btn-pink:hover {
+    background: #dd86aa;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 1px solid #e9a1bd;
+    color: #d987a8;
+}
+
+.btn-outline:hover {
+    background: #f4b4ce;
+    color: white;
+}
+
+/* Hero Image */
+.hero-image {
+    text-align: center;
+    position: relative;
+    margin-top: 35px;
+}
+
+.image-frame {
+    display: inline-block;
+    padding: 12px;
+    background: white;
+    border-radius: 35px;
+    box-shadow: 0 15px 40px rgba(220,160,190,0.2);
+}
+
+.image-frame img {
+    width: 100%;
+    max-width: 390px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 27px;
+}
+
+.floating-text {
+    position: absolute;
+    bottom: 15px;
+    left: 10%;
+    background: white;
+    color: #df8eaf;
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px #e9dce5;
+}
+
+/* Sections */
+.section-padding {
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #df8eaf;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.section-title h2 {
+    color: #444;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.section-title h2 span {
+    color: #e997b8;
+}
+
+/* About */
+.about-image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.about-card {
+    padding: 30px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.04);
+    line-height: 2;
+}
+
+.about-card h3 {
+    color: #df8eaf;
+    margin-bottom: 20px;
+}
+
+.about-card strong {
+    color: #d986a8;
+}
+
+.quote {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff3f8;
+    border-left: 4px solid #efa6c3;
+    border-radius: 10px;
+    color: #c77e9d;
+}
+
+/* Interest */
+.interest {
+    background: #f5faff;
+}
+
+.interest-card {
+    background: white;
+    text-align: center;
+    padding: 40px 25px;
+    border-radius: 25px;
+    height: 100%;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+
+.interest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(210,160,190,0.15);
+}
+
+.interest-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.interest-card h4 {
+    color: #df8eaf;
+    margin-bottom: 15px;
+}
+
+.interest-card p {
+    color: #888;
+}
+
+/* Contact */
+.contact {
+    background: linear-gradient(135deg, #fff4f8, #eff8ff);
+}
+
+.contact span {
+    color: #df8eaf;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin: 15px 0;
+    color: #444;
+}
+
+.contact-links {
+    margin-top: 25px;
+}
+
+.contact-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #d986a8;
+    background: white;
+    padding: 12px 25px;
+    margin: 7px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background: #efa6c3;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: white;
+    color: #999;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin: auto;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .nav-button {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+}
