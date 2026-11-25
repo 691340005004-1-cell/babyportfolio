@@ -163,13 +163,11 @@ section {
     background: linear-gradient(135deg, #f4a7c7, #9ed6f3);
     box-shadow: 0 20px 50px #d8dce9;
 }
-
-.image-decoration img {
+ .hero-banner img{
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 6px solid white;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .floating-text {
